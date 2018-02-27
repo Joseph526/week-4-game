@@ -17,12 +17,12 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h1>CrystalsCollector!</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Instructions</h3>
@@ -38,36 +38,40 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
-                <div id="currentScore">Current score goes here
+            <div class="col-sm-2">
+                <div id="randomNumberHolder">Number to match: <span id="randomNumber">&nbsp;</span>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2">
                 <div id="winLoss">
-                    Wins: <span id="win"></span>
+                    Wins: <span id="win">&nbsp;</span>
                     <br>
-                    Losses: <span id="loss"></span>
+                    Losses: <span id="loss">&nbsp;</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div id="crystalHolder">Crystals go here</div>
+            <div class="col-xs-1">
+                <div class="crystalHolder"><img src="assets/images/ruby-clipart-1.png" alt="Ruby" class="img-thumbnail imgCrystal" value="0"></div>
+            </div>
+            <div class="col-xs-1">
+                <div class="crystalHolder"><img src="assets/images/emerald-clipart-6.png" alt="Emerald" class="img-thumbnail imgCrystal" value="1"></div>
+            </div>
+            <div class="col-xs-1">
+                <div class="crystalHolder"><img src="assets/images/gems-clipart-sapphire-3.png" alt="Sapphire" class="img-thumbnail imgCrystal" value="2"></div>
+            </div>
+            <div class="col-xs-1">
+                <div class="crystalHolder"><img src="assets/images/diamond-clipart-sparkling-14.jpg" alt="Diamond" class="img-thumbnail imgCrystal" value="3"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-2">
                 <div id="totalScoreHolder">
-                    Your total score is: <span id="totalScore"></span>
+                    Your total score is: <span id="totalScore">&nbsp;</span>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1">
-                <input type="button" value="Reset Game" onClick="chooseWord()">
-            </div>
-            <div class="col-md-3">
-                <div id="divResultMessage"></div>
+            <div class="col-sm-2">
+                <div id="resultMessage"></div>
             </div>
         </div>
     </div><!-- /.container-fluid -->
