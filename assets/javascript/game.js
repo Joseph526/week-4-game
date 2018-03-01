@@ -7,22 +7,19 @@ $(document).ready(function () {
     var winCount = 0;
     var lossCount = 0;
 
-
     // Declare functions
     // Function to initialize the start of a round
     function startGame() {
         //Reset the user's score
         totalScore = 0;
         printResult();
-        
+
         // Generate random numbers
         numberToMatch = Math.floor(Math.random() * 103) + 18;
         $("#randomNumber").text(numberToMatch);
         for (i = 0; i < gemSecrets.length; i++) {
             gemSecrets[i] = Math.floor(Math.random() * 12) + 1;
         }
-        console.log(gemSecrets);
-
     }
 
     // Function to update results on screen
@@ -32,11 +29,11 @@ $(document).ready(function () {
         $("#loss").text(lossCount);
     }
 
-    // Function for on.click action
-    // Get random number for crystal, add to totalScore
+    // Function for on.click method
+    // Get random number from applicable crystal, add to totalScore
     $(".imgCrystal").click(function () {
         totalScore += gemSecrets[$(this).attr("value")];
-        
+
         // Check if totalScore equals/exceeds numberToMatch
         if (totalScore === numberToMatch) {
             $("#resultMessage").text("You win!");
@@ -53,8 +50,6 @@ $(document).ready(function () {
         printResult();
     });
 
-
     // Call function to start game
     startGame();
-
 });
