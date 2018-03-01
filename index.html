@@ -39,11 +39,11 @@
         </div>
         <div class="row">
             <div class="col-sm-2">
-                <div id="randomNumberHolder">Number to match: <span id="randomNumber">&nbsp;</span>
+                <div id="randomNumberHolder" class="well well-sm">Number to match: <span id="randomNumber">&nbsp;</span>
                 </div>
             </div>
             <div class="col-sm-2">
-                <div id="winLoss">
+                <div id="winLoss" class="well well-sm">
                     Wins: <span id="win">&nbsp;</span>
                     <br>
                     Losses: <span id="loss">&nbsp;</span>
@@ -51,27 +51,29 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-1">
+            <div class="col-xs-3 col-sm-1">
                 <div class="crystalHolder"><img src="assets/images/ruby-clipart-1.png" alt="Ruby" class="img-thumbnail imgCrystal" value="0"></div>
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-3 col-sm-1">
                 <div class="crystalHolder"><img src="assets/images/emerald-clipart-6.png" alt="Emerald" class="img-thumbnail imgCrystal" value="1"></div>
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-3 col-sm-1">
                 <div class="crystalHolder"><img src="assets/images/gems-clipart-sapphire-3.png" alt="Sapphire" class="img-thumbnail imgCrystal" value="2"></div>
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-3 col-sm-1">
                 <div class="crystalHolder"><img src="assets/images/diamond-clipart-sparkling-14.jpg" alt="Diamond" class="img-thumbnail imgCrystal" value="3"></div>
             </div>
         </div>
+        <!-- Empty row so image doesn't touch next row -->
+        <div class="row">&nbsp;</div>
         <div class="row">
             <div class="col-sm-2">
-                <div id="totalScoreHolder">
+                <div id="totalScoreHolder" class="well well-sm">
                     Your total score is: <span id="totalScore">&nbsp;</span>
                 </div>
             </div>
             <div class="col-sm-2">
-                <div id="resultMessage"></div>
+                <div id="resultMessage" class="well well-sm">&nbsp;</div>
             </div>
         </div>
     </div><!-- /.container-fluid -->

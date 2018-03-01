@@ -1,0 +1,18 @@
+body {
+    background: url("../images/cartographer.png");
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+#resultMessage {
+    color: orangered;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.imgCrystal {
+    border: 1px solid black;
+}
